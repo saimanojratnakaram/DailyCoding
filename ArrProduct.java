@@ -3,7 +3,7 @@ package Dailycoding;
 import java.util.Scanner;
 
 public class ArrProduct {
-     static void productSol(int arr[]) {
+      void productSol(int arr[]) {
          int n=arr.length;
         int i, temp = 1;
         int[] product = new int[n];
@@ -27,7 +27,7 @@ public class ArrProduct {
     }
 
     public static void main(String[] args) {
-
+        ArrProduct ap=new ArrProduct();
         Scanner scanner=new Scanner(System.in);
         String s= scanner.nextLine();
         String[] s1 = s.split(" ");
@@ -36,6 +36,6 @@ public class ArrProduct {
         {
             arr[i]=Integer.parseInt(s1[i]);
         }
-        productSol(arr);
+        ap.productSol(arr);
     }
     }
